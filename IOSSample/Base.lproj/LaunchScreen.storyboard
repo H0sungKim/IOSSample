@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swift.png" translatesAutoresizingMaskIntoConstraints="NO" id="KPk-Ux-2db">
+                                <rect key="frame" x="143.33333333333334" y="373" width="106.33333333333334" height="106"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Snp-vl-2Qt">
+                                <rect key="frame" x="0.0" y="479" width="393" height="339"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Sample by Hosung.Kim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOp-OR-QMK">
+                                        <rect key="frame" x="92.666666666666686" y="159" width="208" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="NOp-OR-QMK" firstAttribute="centerX" secondItem="Snp-vl-2Qt" secondAttribute="centerX" id="090-lt-Ps1"/>
+                                    <constraint firstItem="NOp-OR-QMK" firstAttribute="centerY" secondItem="Snp-vl-2Qt" secondAttribute="centerY" id="aiA-Wz-QY1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KPk-Ux-2db" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="DaG-8x-J1y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Snp-vl-2Qt" secondAttribute="trailing" id="TcM-Rt-gSJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Snp-vl-2Qt" secondAttribute="bottom" id="a58-Xm-tb6"/>
+                            <constraint firstItem="Snp-vl-2Qt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bMy-tn-t0O"/>
+                            <constraint firstItem="Snp-vl-2Qt" firstAttribute="top" secondItem="KPk-Ux-2db" secondAttribute="bottom" id="fKo-iM-jX3"/>
+                            <constraint firstItem="KPk-Ux-2db" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ps0-nt-7hI"/>
+                            <constraint firstItem="KPk-Ux-2db" firstAttribute="height" secondItem="Snp-vl-2Qt" secondAttribute="height" multiplier="0.312684" id="vXA-KF-0oQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="swift.png" width="106.25" height="106.25"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
