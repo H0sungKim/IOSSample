@@ -90,6 +90,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E157D152B3330CB00EF0A0A /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				4EBBEF502B317328008857B6 /* Calculator.storyboard */,
+				4EBBEF522B317360008857B6 /* CalculatorViewController.swift */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		4E157D162B3330DD00EF0A0A /* UsefulWebsite */ = {
+			isa = PBXGroup;
+			children = (
+				4EAE6C8C2B31D6F80091F6AF /* UsefulWebsiteViewController.swift */,
+				4EAE6C8E2B31D70F0091F6AF /* UsefulWebsite.storyboard */,
+			);
+			path = UsefulWebsite;
+			sourceTree = "<group>";
+		};
+		4E157D172B3330F500EF0A0A /* CustomTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				4EBBEF4C2B316608008857B6 /* CustomTableViewCell.xib */,
+				4EBBEF4E2B3166E0008857B6 /* CustomTableViewCell.swift */,
+			);
+			path = CustomTableViewCell;
+			sourceTree = "<group>";
+		};
+		4E157D182B33311100EF0A0A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4E779EC82B2189E00040FDC8 /* MainViewController.swift */,
+				4E779ECA2B2189EF0040FDC8 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4E157D192B33311E00EF0A0A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4EBBEF542B31737E008857B6 /* UIViewController+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		4E779E8C2B2187850040FDC8 = {
 			isa = PBXGroup;
 			children = (
@@ -113,20 +157,16 @@
 		4E779E972B2187850040FDC8 /* IOSSample */ = {
 			isa = PBXGroup;
 			children = (
+				4E157D192B33311E00EF0A0A /* Extension */,
+				4E157D182B33311100EF0A0A /* Main */,
+				4E157D172B3330F500EF0A0A /* CustomTableViewCell */,
+				4E157D162B3330DD00EF0A0A /* UsefulWebsite */,
+				4E157D152B3330CB00EF0A0A /* Calculator */,
 				4EBBEF492B315836008857B6 /* res */,
 				4E779E982B2187850040FDC8 /* AppDelegate.swift */,
 				4E779EA12B2187870040FDC8 /* Assets.xcassets */,
-				4EBBEF542B31737E008857B6 /* UIViewController+Ext.swift */,
 				4E779EA32B2187870040FDC8 /* LaunchScreen.storyboard */,
 				4E779EA62B2187870040FDC8 /* Info.plist */,
-				4E779EC82B2189E00040FDC8 /* MainViewController.swift */,
-				4EBBEF4C2B316608008857B6 /* CustomTableViewCell.xib */,
-				4EBBEF4E2B3166E0008857B6 /* CustomTableViewCell.swift */,
-				4E779ECA2B2189EF0040FDC8 /* Main.storyboard */,
-				4EBBEF502B317328008857B6 /* Calculator.storyboard */,
-				4EBBEF522B317360008857B6 /* CalculatorViewController.swift */,
-				4EAE6C8C2B31D6F80091F6AF /* UsefulWebsiteViewController.swift */,
-				4EAE6C8E2B31D70F0091F6AF /* UsefulWebsite.storyboard */,
 			);
 			path = IOSSample;
 			sourceTree = "<group>";

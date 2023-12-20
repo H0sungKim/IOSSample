@@ -26,7 +26,7 @@ extension UIViewController {
         switch viewController {
         case "Calculator" :
             return getViewController(storyboard: "Calculator", identifier: String(describing: CalculatorViewController.self), modalPresentationStyle: .fullScreen)
-        case "UsefulWebsite" :
+        case "Useful Website" :
             return getViewController(storyboard: "UsefulWebsite", identifier: String(describing: UsefulWebsiteViewController.self), modalPresentationStyle: .fullScreen)
         default :
             return UIViewController()

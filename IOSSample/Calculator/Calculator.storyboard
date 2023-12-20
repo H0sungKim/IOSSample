@@ -33,11 +33,17 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="270.66666666666669" height="121"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" title="C"/>
+                                                <connections>
+                                                    <action selector="clearOnClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="184-9e-8Uh"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAB-PE-0De">
                                                 <rect key="frame" x="270.66666666666669" y="0.0" width="90.333333333333314" height="121"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" title="/"/>
+                                                <connections>
+                                                    <action selector="arithmeticOnClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="gXp-X5-fzk"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -83,6 +89,9 @@
                                                 <rect key="frame" x="270.66666666666669" y="0.0" width="90.333333333333314" height="121.33333333333333"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" title="*"/>
+                                                <connections>
+                                                    <action selector="arithmeticOnClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="CV6-ag-Afa"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -136,6 +145,9 @@
                                                 <rect key="frame" x="270.66666666666669" y="0.0" width="90.333333333333314" height="121"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" title="-"/>
+                                                <connections>
+                                                    <action selector="arithmeticOnClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="9Mg-RO-CaK"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -189,6 +201,9 @@
                                                 <rect key="frame" x="270.66666666666669" y="0.0" width="90.333333333333314" height="121.33333333333333"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" title="+"/>
+                                                <connections>
+                                                    <action selector="arithmeticOnClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="HBZ-xj-1wi"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -215,37 +230,31 @@
                                         <rect key="frame" x="0.0" y="606" width="361" height="121"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ts0-HE-Htg">
-                                                <rect key="frame" x="0.0" y="0.0" width="180.66666666666666" height="121"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="270.66666666666669" height="121"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" title="0"/>
                                                 <connections>
                                                     <action selector="numberOnClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="L40-WW-HnY"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Mj-kI-SFY">
-                                                <rect key="frame" x="180.66666666666666" y="0.0" width="89.999999999999972" height="121"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="."/>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISC-tm-lYH">
                                                 <rect key="frame" x="270.66666666666669" y="0.0" width="90.333333333333314" height="121"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="="/>
+                                                <connections>
+                                                    <action selector="calculateOnClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="G7e-tv-VgD"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="3Mj-kI-SFY" firstAttribute="top" secondItem="Ie9-kI-AQ6" secondAttribute="top" id="2Zy-5d-qdg"/>
                                             <constraint firstItem="ts0-HE-Htg" firstAttribute="top" secondItem="Ie9-kI-AQ6" secondAttribute="top" id="8eE-GD-vYP"/>
                                             <constraint firstAttribute="trailing" secondItem="ISC-tm-lYH" secondAttribute="trailing" id="8qo-UT-VYN"/>
+                                            <constraint firstItem="ISC-tm-lYH" firstAttribute="leading" secondItem="ts0-HE-Htg" secondAttribute="trailing" id="Gli-00-7zZ"/>
                                             <constraint firstAttribute="bottom" secondItem="ISC-tm-lYH" secondAttribute="bottom" id="HcZ-6C-W31"/>
                                             <constraint firstAttribute="bottom" secondItem="ts0-HE-Htg" secondAttribute="bottom" id="Iw2-RW-Ly7"/>
-                                            <constraint firstAttribute="bottom" secondItem="3Mj-kI-SFY" secondAttribute="bottom" id="RKY-sz-gLu"/>
-                                            <constraint firstItem="ts0-HE-Htg" firstAttribute="width" secondItem="ISC-tm-lYH" secondAttribute="width" multiplier="2" id="SaL-lY-4VG"/>
-                                            <constraint firstItem="ISC-tm-lYH" firstAttribute="leading" secondItem="3Mj-kI-SFY" secondAttribute="trailing" id="WhT-73-2PM"/>
+                                            <constraint firstItem="ts0-HE-Htg" firstAttribute="width" secondItem="ISC-tm-lYH" secondAttribute="width" multiplier="3" id="SaL-lY-4VG"/>
                                             <constraint firstItem="ISC-tm-lYH" firstAttribute="top" secondItem="Ie9-kI-AQ6" secondAttribute="top" id="i7M-C5-4cz"/>
-                                            <constraint firstItem="3Mj-kI-SFY" firstAttribute="leading" secondItem="ts0-HE-Htg" secondAttribute="trailing" id="jRl-ts-y1W"/>
-                                            <constraint firstItem="ts0-HE-Htg" firstAttribute="width" secondItem="3Mj-kI-SFY" secondAttribute="width" multiplier="2" id="l25-hf-0OZ"/>
                                             <constraint firstItem="ts0-HE-Htg" firstAttribute="leading" secondItem="Ie9-kI-AQ6" secondAttribute="leading" id="pwj-ue-6yr"/>
                                         </constraints>
                                     </view>
@@ -264,7 +273,6 @@
                     <connections>
                         <outlet property="addButton" destination="yVo-Te-m7m" id="ONe-3N-Riv"/>
                         <outlet property="cButton" destination="OEz-FG-2Ur" id="oSC-hP-uSs"/>
-                        <outlet property="decimalPointButton" destination="3Mj-kI-SFY" id="orI-gE-o7S"/>
                         <outlet property="divideButton" destination="cAB-PE-0De" id="asI-f7-aOs"/>
                         <outlet property="eightButton" destination="7Ju-hM-ESb" id="C7v-ZP-Oc3"/>
                         <outlet property="fiveButton" destination="enN-kA-Fe5" id="QaY-lW-fs8"/>
