@@ -2,23 +2,24 @@
 //  UsefulWebsiteViewController.swift
 //  IOSSample
 //
-//  Created by 김기훈 on 2023/12/19.
+//  Created by Hosung.Kim on 2023/12/19.
 //
 
 import UIKit
 
 class UsefulWebsiteViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    let titleText: [String] = ["The Swift Programming Language",
-                               "The Swift Programming Language (Korean)",
-                               "Xcode Help",
-                               "Apple Developer Documentation",
-                               "App Store Guidlines",
-                               "swift.org",
-                               "Kodeco Swift Style Guide",
-                               "Google Swift Style",
-                               "Apple Documentation Archive",
-                               "Awesome Swift",
-                               "Awesome iOS"
+    let titleText: [String] = [
+        "The Swift Programming Language",
+        "The Swift Programming Language (Korean)",
+        "Xcode Help",
+        "Apple Developer Documentation",
+        "App Store Guidlines",
+        "swift.org",
+        "Kodeco Swift Style Guide",
+        "Google Swift Style",
+        "Apple Documentation Archive",
+        "Awesome Swift",
+        "Awesome iOS"
     ]
     @IBOutlet weak var tableView: UITableView!
     

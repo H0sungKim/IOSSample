@@ -1,8 +1,8 @@
 //
 //  UIViewController+Util.swift
-//  NetworkSample
+//  IOSSample
 //
-//  Created by 김기훈 on 2021/11/22.
+//  Created by Hosung.Kim on 2021/11/22.
 //
 
 import UIKit
@@ -34,6 +34,11 @@ extension UIViewController {
             
         case "Hello, world!" :
             return getViewController(storyboard: "HelloWorld", identifier: String(describing: HelloWorldViewController.self), modalPresentationStyle: .fullScreen)
+        case "Bulb" :
+            return getViewController(storyboard: "Bulb", identifier: String(describing: BulbViewController.self), modalPresentationStyle: .fullScreen)
+        case "Gallery" :
+            return getViewController(storyboard: "Gallery", identifier: String(describing: GalleryViewController.self), modalPresentationStyle: .fullScreen)
+        
         default :
             return UIViewController()
         }

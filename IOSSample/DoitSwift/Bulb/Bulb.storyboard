@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bulb View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="BulbViewController" id="Y6W-OH-hqX" customClass="BulbViewController" customModule="IOSSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="29x-Do-Pcx">
+                                <rect key="frame" x="0.0" y="691.66666666666663" width="393" height="126.33333333333337"/>
+                                <subviews>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dxy-qb-Oyl">
+                                        <rect key="frame" x="172" y="47.666666666666742" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="bulbSwitch:" destination="Y6W-OH-hqX" eventType="valueChanged" id="1TV-WF-ob4"/>
+                                        </connections>
+                                    </switch>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rve-RU-iPW">
+                                        <rect key="frame" x="292" y="45.666666666666742" width="101" height="35"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Zoom Out"/>
+                                        <connections>
+                                            <action selector="zoomOnClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="BhV-3w-F1u"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="dxy-qb-Oyl" firstAttribute="centerX" secondItem="29x-Do-Pcx" secondAttribute="centerX" id="ZTn-jG-omu"/>
+                                    <constraint firstItem="dxy-qb-Oyl" firstAttribute="centerY" secondItem="29x-Do-Pcx" secondAttribute="centerY" id="aK6-FO-9kq"/>
+                                    <constraint firstItem="Rve-RU-iPW" firstAttribute="centerY" secondItem="29x-Do-Pcx" secondAttribute="centerY" id="aTS-sG-Ead"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rve-RU-iPW" secondAttribute="trailing" id="cBV-g7-lAG"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hm9-52-y3J">
+                                <rect key="frame" x="0.0" y="59" width="393" height="632.66666666666663"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lamp_off.png" translatesAutoresizingMaskIntoConstraints="NO" id="dbV-t9-8C8">
+                                        <rect key="frame" x="44" y="25" width="111" height="172"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="29x-Do-Pcx" secondAttribute="bottom" id="Cpe-Y3-ycg"/>
+                            <constraint firstItem="Hm9-52-y3J" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="EEF-sH-w1I"/>
+                            <constraint firstItem="Hm9-52-y3J" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="K3U-bJ-Njz"/>
+                            <constraint firstItem="29x-Do-Pcx" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Okn-GK-2yQ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Hm9-52-y3J" secondAttribute="trailing" id="X8c-Fk-dTt"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="29x-Do-Pcx" secondAttribute="trailing" id="dgu-SF-YDr"/>
+                            <constraint firstItem="29x-Do-Pcx" firstAttribute="top" secondItem="Hm9-52-y3J" secondAttribute="bottom" id="dhJ-l9-ldE"/>
+                            <constraint firstItem="Hm9-52-y3J" firstAttribute="height" secondItem="29x-Do-Pcx" secondAttribute="height" multiplier="5" id="oXZ-Ty-cq9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnZoom" destination="Rve-RU-iPW" id="dxz-kx-FjZ"/>
+                        <outlet property="imgvBulb" destination="dbV-t9-8C8" id="qZe-Z3-q5D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lamp_off.png" width="1215" height="1920"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

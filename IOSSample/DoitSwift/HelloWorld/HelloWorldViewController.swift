@@ -2,7 +2,7 @@
 //  HelloWorldViewController.swift
 //  IOSSample
 //
-//  Created by 김기훈 on 2023/12/23.
+//  Created by Hosung.Kim on 2023/12/23.
 //
 
 import UIKit

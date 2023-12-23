@@ -2,14 +2,16 @@
 //  DoitSwiftViewController.swift
 //  IOSSample
 //
-//  Created by 김기훈 on 2023/12/23.
+//  Created by Hosung.Kim on 2023/12/23.
 //
 
 import UIKit
 
 class DoitSwiftViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    let titleText: [String] = ["Hello, world!",
-                               
+    let titleText: [String] = [
+        "Hello, world!",
+        "Bulb",
+        "Gallery",
     ]
     @IBOutlet weak var tableView: UITableView!
     

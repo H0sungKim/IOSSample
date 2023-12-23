@@ -18,14 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mho-DT-o70">
-                                <rect key="frame" x="0.0" y="363.66666666666669" width="393" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mho-DT-o70">
+                                <rect key="frame" x="153" y="363.66666666666669" width="87.333333333333314" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" name="AccentColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, world!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HG4-hb-8vd">
-                                <rect key="frame" x="0.0" y="387.66666666666669" width="393" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, world!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HG4-hb-8vd">
+                                <rect key="frame" x="149.33333333333334" y="387.66666666666669" width="94.666666666666657" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -57,14 +57,12 @@
                             <constraint firstItem="GpT-UU-7KF" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="3Sp-zk-HLE"/>
                             <constraint firstItem="Rd3-QU-40i" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="5Qi-Nq-LMb"/>
                             <constraint firstItem="6de-Wg-fOJ" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="85n-lH-D8x"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Mho-DT-o70" secondAttribute="trailing" id="8hg-mM-JiJ"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Rd3-QU-40i" secondAttribute="trailing" id="8sY-62-7Nw"/>
-                            <constraint firstItem="Mho-DT-o70" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="YUX-Td-m8J"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="HG4-hb-8vd" secondAttribute="trailing" id="dJa-97-MxB"/>
+                            <constraint firstItem="Mho-DT-o70" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="SRw-Ah-zeO"/>
+                            <constraint firstItem="HG4-hb-8vd" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="UpR-Zc-ajo"/>
                             <constraint firstItem="HG4-hb-8vd" firstAttribute="top" secondItem="Mho-DT-o70" secondAttribute="bottom" id="gt8-HK-nSI"/>
                             <constraint firstItem="GpT-UU-7KF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="iDb-gl-Pod"/>
                             <constraint firstItem="Rd3-QU-40i" firstAttribute="top" secondItem="HG4-hb-8vd" secondAttribute="bottom" id="pcC-FZ-MMa"/>
-                            <constraint firstItem="HG4-hb-8vd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="qRO-vB-A12"/>
                             <constraint firstItem="Rd3-QU-40i" firstAttribute="leading" secondItem="6de-Wg-fOJ" secondAttribute="trailing" id="qXe-Bf-DDn"/>
                         </constraints>
                     </view>

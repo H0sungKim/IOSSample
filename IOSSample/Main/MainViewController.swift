@@ -8,9 +8,10 @@
 import UIKit
 
 class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    let titleText: [String] = ["Calculator",
-                               "Useful Website",
-                               "Do it! Swift"
+    let titleText: [String] = [
+        "Calculator",
+        "Useful Website",
+        "Do it! Swift"
     ]
     @IBOutlet weak var tableView: UITableView!
     

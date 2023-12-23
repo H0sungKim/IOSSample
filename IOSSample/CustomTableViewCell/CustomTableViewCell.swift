@@ -1,8 +1,8 @@
 //
 //  CustomTableViewCell.swift
-//  JapaneseVocabulary
+//  IOSSample
 //
-//  Created by 김기훈 on 2022/03/24.
+//  Created by Hosung.Kim on 2022/03/24.
 //
 
 import UIKit
