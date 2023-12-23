@@ -1,16 +1,15 @@
 //
-//  MainViewController.swift
+//  DoitSwiftViewController.swift
 //  IOSSample
 //
-//  Created by Hosung.Kim on 2023/12/07.
+//  Created by 김기훈 on 2023/12/23.
 //
 
 import UIKit
 
-class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    let titleText: [String] = ["Calculator",
-                               "Useful Website",
-                               "Do it! Swift"
+class DoitSwiftViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    let titleText: [String] = ["Hello, world!",
+                               
     ]
     @IBOutlet weak var tableView: UITableView!
     

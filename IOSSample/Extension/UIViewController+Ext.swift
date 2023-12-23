@@ -28,6 +28,12 @@ extension UIViewController {
             return getViewController(storyboard: "Calculator", identifier: String(describing: CalculatorViewController.self), modalPresentationStyle: .fullScreen)
         case "Useful Website" :
             return getViewController(storyboard: "UsefulWebsite", identifier: String(describing: UsefulWebsiteViewController.self), modalPresentationStyle: .fullScreen)
+        case "Do it! Swift" :
+            return getViewController(storyboard: "DoitSwift", identifier: String(describing: DoitSwiftViewController.self), modalPresentationStyle: .fullScreen)
+            
+            
+        case "Hello, world!" :
+            return getViewController(storyboard: "HelloWorld", identifier: String(describing: HelloWorldViewController.self), modalPresentationStyle: .fullScreen)
         default :
             return UIViewController()
         }
