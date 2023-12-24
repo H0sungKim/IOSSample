@@ -38,6 +38,9 @@ extension UIViewController {
             return getViewController(storyboard: "Bulb", identifier: String(describing: BulbViewController.self), modalPresentationStyle: .fullScreen)
         case "Gallery" :
             return getViewController(storyboard: "Gallery", identifier: String(describing: GalleryViewController.self), modalPresentationStyle: .fullScreen)
+        case "Date Picker" :
+            return getViewController(storyboard: "DatePicker", identifier: String(describing: DatePickerViewController.self), modalPresentationStyle: .fullScreen)
+        
         
         default :
             return UIViewController()

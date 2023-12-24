@@ -40,6 +40,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        NSLog("2023.12.24 20:39")
         
         tableView.delegate = self
         tableView.dataSource = self

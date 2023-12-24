@@ -12,6 +12,7 @@ class DoitSwiftViewController: UIViewController, UITableViewDataSource, UITableV
         "Hello, world!",
         "Bulb",
         "Gallery",
+        "Date Picker",
     ]
     @IBOutlet weak var tableView: UITableView!
     
