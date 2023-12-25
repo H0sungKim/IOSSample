@@ -40,6 +40,8 @@ extension UIViewController {
             return getViewController(storyboard: "Gallery", identifier: String(describing: GalleryViewController.self), modalPresentationStyle: .fullScreen)
         case "Date Picker" :
             return getViewController(storyboard: "DatePicker", identifier: String(describing: DatePickerViewController.self), modalPresentationStyle: .fullScreen)
+        case "Image Roulette" :
+            return getViewController(storyboard: "ImageRoulette", identifier: String(describing: ImageRouletteViewController.self), modalPresentationStyle: .fullScreen)
         
         
         default :
