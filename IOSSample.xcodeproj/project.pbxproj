@@ -15,6 +15,9 @@
 		4E157D3B2B36D29900EF0A0A /* BulbViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E157D3A2B36D29900EF0A0A /* BulbViewController.swift */; };
 		4E157D3E2B36E0E400EF0A0A /* lamp_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E157D3C2B36E0E400EF0A0A /* lamp_off.png */; };
 		4E157D3F2B36E0E400EF0A0A /* lamp_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E157D3D2B36E0E400EF0A0A /* lamp_on.png */; };
+		4E4C4A3C2B3AF22700801C90 /* Lamp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E4C4A3B2B3AF22700801C90 /* Lamp.storyboard */; };
+		4E4C4A3E2B3AF23600801C90 /* LampViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4C4A3D2B3AF23600801C90 /* LampViewController.swift */; };
+		4E4C4A3F2B3B00D600801C90 /* lamp-remove.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E4C4A382B3AF07B00801C90 /* lamp-remove.png */; };
 		4E779E992B2187850040FDC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E779E982B2187850040FDC8 /* AppDelegate.swift */; };
 		4E779EA22B2187870040FDC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E779EA12B2187870040FDC8 /* Assets.xcassets */; };
 		4E779EA52B2187870040FDC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E779EA32B2187870040FDC8 /* LaunchScreen.storyboard */; };
@@ -72,6 +75,9 @@
 		4E157D3A2B36D29900EF0A0A /* BulbViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulbViewController.swift; sourceTree = "<group>"; };
 		4E157D3C2B36E0E400EF0A0A /* lamp_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lamp_off.png; sourceTree = "<group>"; };
 		4E157D3D2B36E0E400EF0A0A /* lamp_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lamp_on.png; sourceTree = "<group>"; };
+		4E4C4A382B3AF07B00801C90 /* lamp-remove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lamp-remove.png"; sourceTree = "<group>"; };
+		4E4C4A3B2B3AF22700801C90 /* Lamp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lamp.storyboard; sourceTree = "<group>"; };
+		4E4C4A3D2B3AF23600801C90 /* LampViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampViewController.swift; sourceTree = "<group>"; };
 		4E779E952B2187850040FDC8 /* IOSSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E779E982B2187850040FDC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E779EA12B2187870040FDC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -179,6 +185,7 @@
 		4E157D2D2B36B4A800EF0A0A /* DoitSwift */ = {
 			isa = PBXGroup;
 			children = (
+				4E4C4A3A2B3AF20E00801C90 /* Lamp */,
 				4EFB29522B3876FE00872469 /* ImageRoulette */,
 				4EEC37562B38106700849E39 /* DatePicker */,
 				4EEC37432B36E8B700849E39 /* Gallery */,
@@ -206,6 +213,15 @@
 				4E157D3A2B36D29900EF0A0A /* BulbViewController.swift */,
 			);
 			path = Bulb;
+			sourceTree = "<group>";
+		};
+		4E4C4A3A2B3AF20E00801C90 /* Lamp */ = {
+			isa = PBXGroup;
+			children = (
+				4E4C4A3B2B3AF22700801C90 /* Lamp.storyboard */,
+				4E4C4A3D2B3AF23600801C90 /* LampViewController.swift */,
+			);
+			path = Lamp;
 			sourceTree = "<group>";
 		};
 		4E779E8C2B2187850040FDC8 = {
@@ -266,6 +282,7 @@
 		4EBBEF492B315836008857B6 /* res */ = {
 			isa = PBXGroup;
 			children = (
+				4E4C4A382B3AF07B00801C90 /* lamp-remove.png */,
 				4EEC374A2B36F0E500849E39 /* 0.jpeg */,
 				4EEC37492B36F0E500849E39 /* 1.jpeg */,
 				4EEC374C2B36F0E600849E39 /* 2.jpeg */,
@@ -418,6 +435,7 @@
 				4EEC37532B36F0E600849E39 /* 2.jpeg in Resources */,
 				4EEC374F2B36F0E600849E39 /* 4.jpeg in Resources */,
 				4EFB29562B38778200872469 /* ImageRoulette.storyboard in Resources */,
+				4E4C4A3F2B3B00D600801C90 /* lamp-remove.png in Resources */,
 				4E157D342B36B65000EF0A0A /* HelloWorld.storyboard in Resources */,
 				4EEC37502B36F0E600849E39 /* 1.jpeg in Resources */,
 				4E779ECB2B2189EF0040FDC8 /* Main.storyboard in Resources */,
@@ -426,6 +444,7 @@
 				4EEC37552B36F0E600849E39 /* 3.jpeg in Resources */,
 				4EEC37522B36F0E600849E39 /* 6.jpeg in Resources */,
 				4E157D382B36D1D300EF0A0A /* Bulb.storyboard in Resources */,
+				4E4C4A3C2B3AF22700801C90 /* Lamp.storyboard in Resources */,
 				4E779EA52B2187870040FDC8 /* LaunchScreen.storyboard in Resources */,
 				4EBBEF4D2B316608008857B6 /* CustomTableViewCell.xib in Resources */,
 				4EEC37512B36F0E600849E39 /* 0.jpeg in Resources */,
@@ -466,6 +485,7 @@
 				4EFB29542B38776600872469 /* ImageRouletteViewController.swift in Sources */,
 				4E157D362B36B66000EF0A0A /* HelloWorldViewController.swift in Sources */,
 				4EBBEF552B31737E008857B6 /* UIViewController+Ext.swift in Sources */,
+				4E4C4A3E2B3AF23600801C90 /* LampViewController.swift in Sources */,
 				4EEC37452B36E8C800849E39 /* GalleryViewController.swift in Sources */,
 				4EBBEF532B317360008857B6 /* CalculatorViewController.swift in Sources */,
 				4E779EC92B2189E00040FDC8 /* MainViewController.swift in Sources */,
