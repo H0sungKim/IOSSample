@@ -44,6 +44,9 @@ extension UIViewController {
             return getViewController(storyboard: "ImageRoulette", identifier: String(describing: ImageRouletteViewController.self), modalPresentationStyle: .fullScreen)
         case "Lamp" :
             return getViewController(storyboard: "Lamp", identifier: String(describing: LampViewController.self), modalPresentationStyle: .fullScreen)
+        case "Web" :
+            return getViewController(storyboard: "Web", identifier: String(describing: WebViewController.self), modalPresentationStyle: .fullScreen)
+        
         
         
         default :
