@@ -16,6 +16,7 @@ class DoitSwiftViewController: UIViewController, UITableViewDataSource, UITableV
         "Image Roulette",
         "Lamp",
         "Web",
+        "Map",
     ]
     @IBOutlet weak var tableView: UITableView!
     

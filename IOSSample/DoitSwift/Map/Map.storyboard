@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="MapViewController" id="Y6W-OH-hqX" customClass="MapViewController" customModule="IOSSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tY0-Rr-q6h">
+                                <rect key="frame" x="0.0" y="75" width="393" height="32"/>
+                                <segments>
+                                    <segment title="Current Location"/>
+                                    <segment title="Hongik Univ."/>
+                                    <segment title="Home"/>
+                                </segments>
+                                <connections>
+                                    <action selector="sgChanged:" destination="Y6W-OH-hqX" eventType="valueChanged" id="S0N-pT-skK"/>
+                                </connections>
+                            </segmentedControl>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h3x-bz-fCg">
+                                <rect key="frame" x="0.0" y="106" width="393" height="638"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ED-tI-eaH">
+                                <rect key="frame" x="16" y="781" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krN-nq-ZGo">
+                                <rect key="frame" x="16" y="760" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="h3x-bz-fCg" secondAttribute="trailing" id="3fj-6i-TIP"/>
+                            <constraint firstItem="h3x-bz-fCg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="8k5-7f-6kJ"/>
+                            <constraint firstItem="h3x-bz-fCg" firstAttribute="top" secondItem="tY0-Rr-q6h" secondAttribute="bottom" id="FIQ-QL-vZF"/>
+                            <constraint firstItem="tY0-Rr-q6h" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="TAh-id-xM7"/>
+                            <constraint firstItem="8ED-tI-eaH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Ve9-Ah-0c0"/>
+                            <constraint firstItem="8ED-tI-eaH" firstAttribute="top" secondItem="krN-nq-ZGo" secondAttribute="bottom" id="eTC-Ae-pII"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="tY0-Rr-q6h" secondAttribute="trailing" id="lfe-um-J1g"/>
+                            <constraint firstItem="krN-nq-ZGo" firstAttribute="top" secondItem="h3x-bz-fCg" secondAttribute="bottom" constant="16" id="oXS-1b-ANe"/>
+                            <constraint firstItem="krN-nq-ZGo" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="qT5-up-6iG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="8ED-tI-eaH" secondAttribute="bottom" constant="16" id="rCF-79-i8H"/>
+                            <constraint firstItem="tY0-Rr-q6h" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="yhf-jI-LoO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lbInfo1" destination="krN-nq-ZGo" id="WVJ-Cc-sFm"/>
+                        <outlet property="lbInfo2" destination="8ED-tI-eaH" id="aX0-j3-oX0"/>
+                        <outlet property="mvMap" destination="h3x-bz-fCg" id="XRh-6Z-91H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

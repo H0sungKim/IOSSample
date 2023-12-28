@@ -46,6 +46,8 @@ extension UIViewController {
             return getViewController(storyboard: "Lamp", identifier: String(describing: LampViewController.self), modalPresentationStyle: .fullScreen)
         case "Web" :
             return getViewController(storyboard: "Web", identifier: String(describing: WebViewController.self), modalPresentationStyle: .fullScreen)
+        case "Map" :
+            return getViewController(storyboard: "Map", identifier: String(describing: MapViewController.self), modalPresentationStyle: .fullScreen)
         
         
         
