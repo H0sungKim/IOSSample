@@ -17,6 +17,7 @@ class DoitSwiftViewController: UIViewController, UITableViewDataSource, UITableV
         "Lamp",
         "Web",
         "Map",
+        "Page Control"
     ]
     @IBOutlet weak var tableView: UITableView!
     

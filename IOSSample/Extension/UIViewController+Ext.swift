@@ -48,6 +48,8 @@ extension UIViewController {
             return getViewController(storyboard: "Web", identifier: String(describing: WebViewController.self), modalPresentationStyle: .fullScreen)
         case "Map" :
             return getViewController(storyboard: "Map", identifier: String(describing: MapViewController.self), modalPresentationStyle: .fullScreen)
+        case "Page Control" :
+            return getViewController(storyboard: "PageControl", identifier: String(describing: PageControlViewController.self), modalPresentationStyle: .fullScreen)
         
         
         
