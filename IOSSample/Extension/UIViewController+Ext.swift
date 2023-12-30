@@ -31,7 +31,6 @@ extension UIViewController {
         case "Do it! Swift" :
             return getViewController(storyboard: "DoitSwift", identifier: String(describing: DoitSwiftViewController.self), modalPresentationStyle: .fullScreen)
             
-            
         case "Hello, world!" :
             return getViewController(storyboard: "HelloWorld", identifier: String(describing: HelloWorldViewController.self), modalPresentationStyle: .fullScreen)
         case "Bulb" :
@@ -50,8 +49,8 @@ extension UIViewController {
             return getViewController(storyboard: "Map", identifier: String(describing: MapViewController.self), modalPresentationStyle: .fullScreen)
         case "Page Control" :
             return getViewController(storyboard: "PageControl", identifier: String(describing: PageControlViewController.self), modalPresentationStyle: .fullScreen)
-        
-        
+        case "Tab" :
+            return getViewController(storyboard: "Tab", identifier: String(describing: TabViewController.self), modalPresentationStyle: .fullScreen)
         
         default :
             return UIViewController()
@@ -59,7 +58,7 @@ extension UIViewController {
     }
     
     // MARK: - Private Method
-    private class func getViewController(storyboard:String, identifier:String, modalPresentationStyle:UIModalPresentationStyle) -> UIViewController {
+    private class func getViewController(storyboard: String, identifier: String, modalPresentationStyle: UIModalPresentationStyle) -> UIViewController {
         let sb = UIStoryboard(name: storyboard, bundle: nil)
         let vc = sb.instantiateViewController(withIdentifier: identifier)
         vc.modalPresentationStyle = modalPresentationStyle

@@ -41,6 +41,9 @@
 		4EBBEF512B317328008857B6 /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EBBEF502B317328008857B6 /* Calculator.storyboard */; };
 		4EBBEF532B317360008857B6 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBBEF522B317360008857B6 /* CalculatorViewController.swift */; };
 		4EBBEF552B31737E008857B6 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBBEF542B31737E008857B6 /* UIViewController+Ext.swift */; };
+		4EE6C02B2B3E93FB0040C44F /* Tab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EE6C02A2B3E93FB0040C44F /* Tab.storyboard */; };
+		4EE6C02D2B3E94030040C44F /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE6C02C2B3E94030040C44F /* TabViewController.swift */; };
+		4EE6C0422B3FDE050040C44F /* file.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EE6C0412B3FDE050040C44F /* file.png */; };
 		4EEC37452B36E8C800849E39 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC37442B36E8C800849E39 /* GalleryViewController.swift */; };
 		4EEC37472B36E8D300849E39 /* Gallery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EEC37462B36E8D300849E39 /* Gallery.storyboard */; };
 		4EEC374F2B36F0E600849E39 /* 4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4EEC37482B36F0E500849E39 /* 4.jpeg */; };
@@ -112,6 +115,9 @@
 		4EBBEF502B317328008857B6 /* Calculator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calculator.storyboard; sourceTree = "<group>"; };
 		4EBBEF522B317360008857B6 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		4EBBEF542B31737E008857B6 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		4EE6C02A2B3E93FB0040C44F /* Tab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tab.storyboard; sourceTree = "<group>"; };
+		4EE6C02C2B3E94030040C44F /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		4EE6C0412B3FDE050040C44F /* file.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = file.png; sourceTree = "<group>"; };
 		4EEC37442B36E8C800849E39 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		4EEC37462B36E8D300849E39 /* Gallery.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gallery.storyboard; sourceTree = "<group>"; };
 		4EEC37482B36F0E500849E39 /* 4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpeg; sourceTree = "<group>"; };
@@ -199,6 +205,7 @@
 		4E157D2D2B36B4A800EF0A0A /* DoitSwift */ = {
 			isa = PBXGroup;
 			children = (
+				4EE6C0292B3E93EE0040C44F /* Tab */,
 				4E418A712B3DAE3B000970CA /* PageControl */,
 				4E4C4A472B3C636200801C90 /* Map */,
 				4E4C4A402B3BDF5A00801C90 /* Web */,
@@ -327,6 +334,7 @@
 		4EBBEF492B315836008857B6 /* res */ = {
 			isa = PBXGroup;
 			children = (
+				4EE6C0412B3FDE050040C44F /* file.png */,
 				4E4C4A382B3AF07B00801C90 /* lamp-remove.png */,
 				4EEC374A2B36F0E500849E39 /* 0.jpeg */,
 				4EEC37492B36F0E500849E39 /* 1.jpeg */,
@@ -340,6 +348,15 @@
 				4EBBEF4A2B315847008857B6 /* swift.png */,
 			);
 			path = res;
+			sourceTree = "<group>";
+		};
+		4EE6C0292B3E93EE0040C44F /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				4EE6C02A2B3E93FB0040C44F /* Tab.storyboard */,
+				4EE6C02C2B3E94030040C44F /* TabViewController.swift */,
+			);
+			path = Tab;
 			sourceTree = "<group>";
 		};
 		4EEC37432B36E8B700849E39 /* Gallery */ = {
@@ -484,6 +501,8 @@
 				4EFB29562B38778200872469 /* ImageRoulette.storyboard in Resources */,
 				4E4C4A3F2B3B00D600801C90 /* lamp-remove.png in Resources */,
 				4E157D342B36B65000EF0A0A /* HelloWorld.storyboard in Resources */,
+				4EE6C0422B3FDE050040C44F /* file.png in Resources */,
+				4EE6C02B2B3E93FB0040C44F /* Tab.storyboard in Resources */,
 				4EEC37502B36F0E600849E39 /* 1.jpeg in Resources */,
 				4E779ECB2B2189EF0040FDC8 /* Main.storyboard in Resources */,
 				4EEC37542B36F0E600849E39 /* 5.jpeg in Resources */,
@@ -537,6 +556,7 @@
 				4EBBEF552B31737E008857B6 /* UIViewController+Ext.swift in Sources */,
 				4E4C4A3E2B3AF23600801C90 /* LampViewController.swift in Sources */,
 				4EEC37452B36E8C800849E39 /* GalleryViewController.swift in Sources */,
+				4EE6C02D2B3E94030040C44F /* TabViewController.swift in Sources */,
 				4E4C4A422B3BDF8500801C90 /* WebViewController.swift in Sources */,
 				4EBBEF532B317360008857B6 /* CalculatorViewController.swift in Sources */,
 				4E418A6F2B3D91AF000970CA /* MapViewController.swift in Sources */,
