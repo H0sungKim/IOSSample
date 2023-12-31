@@ -51,6 +51,8 @@ extension UIViewController {
             return getViewController(storyboard: "PageControl", identifier: String(describing: PageControlViewController.self), modalPresentationStyle: .fullScreen)
         case "Tab" :
             return getViewController(storyboard: "Tab", identifier: String(describing: TabViewController.self), modalPresentationStyle: .fullScreen)
+        case "Audio" :
+            return getViewController(storyboard: "Audio", identifier: String(describing: AudioViewController.self), modalPresentationStyle: .fullScreen)
         
         default :
             return UIViewController()

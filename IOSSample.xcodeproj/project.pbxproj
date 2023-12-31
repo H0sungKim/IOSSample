@@ -15,6 +15,11 @@
 		4E157D3B2B36D29900EF0A0A /* BulbViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E157D3A2B36D29900EF0A0A /* BulbViewController.swift */; };
 		4E157D3E2B36E0E400EF0A0A /* lamp_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E157D3C2B36E0E400EF0A0A /* lamp_off.png */; };
 		4E157D3F2B36E0E400EF0A0A /* lamp_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E157D3D2B36E0E400EF0A0A /* lamp_on.png */; };
+		4E334D912B412F2600B357FA /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E334D902B412F2600B357FA /* AudioViewController.swift */; };
+		4E334D932B412F3C00B357FA /* Audio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E334D922B412F3C00B357FA /* Audio.storyboard */; };
+		4E334D952B41420D00B357FA /* Sogno di Volare The Dream of Flight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4E334D942B41420D00B357FA /* Sogno di Volare The Dream of Flight.mp3 */; };
+		4E334D992B41B53500B357FA /* comment.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4E334D972B41B53500B357FA /* comment.txt */; };
+		4E334D9A2B41B53500B357FA /* sampleCode.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4E334D982B41B53500B357FA /* sampleCode.txt */; };
 		4E418A6D2B3D91A1000970CA /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E418A6C2B3D91A1000970CA /* Map.storyboard */; };
 		4E418A6F2B3D91AF000970CA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E418A6E2B3D91AF000970CA /* MapViewController.swift */; };
 		4E418A732B3DAE58000970CA /* PageControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E418A722B3DAE58000970CA /* PageControlViewController.swift */; };
@@ -85,6 +90,11 @@
 		4E157D3A2B36D29900EF0A0A /* BulbViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulbViewController.swift; sourceTree = "<group>"; };
 		4E157D3C2B36E0E400EF0A0A /* lamp_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lamp_off.png; sourceTree = "<group>"; };
 		4E157D3D2B36E0E400EF0A0A /* lamp_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lamp_on.png; sourceTree = "<group>"; };
+		4E334D902B412F2600B357FA /* AudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
+		4E334D922B412F3C00B357FA /* Audio.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Audio.storyboard; sourceTree = "<group>"; };
+		4E334D942B41420D00B357FA /* Sogno di Volare The Dream of Flight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sogno di Volare The Dream of Flight.mp3"; sourceTree = "<group>"; };
+		4E334D972B41B53500B357FA /* comment.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = comment.txt; sourceTree = "<group>"; };
+		4E334D982B41B53500B357FA /* sampleCode.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sampleCode.txt; sourceTree = "<group>"; };
 		4E418A6C2B3D91A1000970CA /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		4E418A6E2B3D91AF000970CA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		4E418A722B3DAE58000970CA /* PageControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlViewController.swift; sourceTree = "<group>"; };
@@ -205,6 +215,7 @@
 		4E157D2D2B36B4A800EF0A0A /* DoitSwift */ = {
 			isa = PBXGroup;
 			children = (
+				4E334D8F2B412F1800B357FA /* Audio */,
 				4EE6C0292B3E93EE0040C44F /* Tab */,
 				4E418A712B3DAE3B000970CA /* PageControl */,
 				4E4C4A472B3C636200801C90 /* Map */,
@@ -237,6 +248,24 @@
 				4E157D3A2B36D29900EF0A0A /* BulbViewController.swift */,
 			);
 			path = Bulb;
+			sourceTree = "<group>";
+		};
+		4E334D8F2B412F1800B357FA /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				4E334D902B412F2600B357FA /* AudioViewController.swift */,
+				4E334D922B412F3C00B357FA /* Audio.storyboard */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		4E334D962B41B4E300B357FA /* Memo */ = {
+			isa = PBXGroup;
+			children = (
+				4E334D972B41B53500B357FA /* comment.txt */,
+				4E334D982B41B53500B357FA /* sampleCode.txt */,
+			);
+			path = Memo;
 			sourceTree = "<group>";
 		};
 		4E418A712B3DAE3B000970CA /* PageControl */ = {
@@ -299,6 +328,7 @@
 		4E779E972B2187850040FDC8 /* IOSSample */ = {
 			isa = PBXGroup;
 			children = (
+				4E334D962B41B4E300B357FA /* Memo */,
 				4E157D2D2B36B4A800EF0A0A /* DoitSwift */,
 				4E157D192B33311E00EF0A0A /* Extension */,
 				4E157D182B33311100EF0A0A /* Main */,
@@ -334,6 +364,7 @@
 		4EBBEF492B315836008857B6 /* res */ = {
 			isa = PBXGroup;
 			children = (
+				4E334D942B41420D00B357FA /* Sogno di Volare The Dream of Flight.mp3 */,
 				4EE6C0412B3FDE050040C44F /* file.png */,
 				4E4C4A382B3AF07B00801C90 /* lamp-remove.png */,
 				4EEC374A2B36F0E500849E39 /* 0.jpeg */,
@@ -509,16 +540,20 @@
 				4EBBEF4B2B315847008857B6 /* swift.png in Resources */,
 				4EEC37552B36F0E600849E39 /* 3.jpeg in Resources */,
 				4EEC37522B36F0E600849E39 /* 6.jpeg in Resources */,
+				4E334D992B41B53500B357FA /* comment.txt in Resources */,
 				4E157D382B36D1D300EF0A0A /* Bulb.storyboard in Resources */,
+				4E334D932B412F3C00B357FA /* Audio.storyboard in Resources */,
 				4E4C4A3C2B3AF22700801C90 /* Lamp.storyboard in Resources */,
 				4E779EA52B2187870040FDC8 /* LaunchScreen.storyboard in Resources */,
 				4EBBEF4D2B316608008857B6 /* CustomTableViewCell.xib in Resources */,
+				4E334D9A2B41B53500B357FA /* sampleCode.txt in Resources */,
 				4E418A6D2B3D91A1000970CA /* Map.storyboard in Resources */,
 				4EEC37512B36F0E600849E39 /* 0.jpeg in Resources */,
 				4E157D3F2B36E0E400EF0A0A /* lamp_on.png in Resources */,
 				4EBBEF512B317328008857B6 /* Calculator.storyboard in Resources */,
 				4E4C4A462B3C5EEF00801C90 /* html.html in Resources */,
 				4E779EA22B2187870040FDC8 /* Assets.xcassets in Resources */,
+				4E334D952B41420D00B357FA /* Sogno di Volare The Dream of Flight.mp3 in Resources */,
 				4EAE6C8F2B31D70F0091F6AF /* UsefulWebsite.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -549,6 +584,7 @@
 				4E779E992B2187850040FDC8 /* AppDelegate.swift in Sources */,
 				4EAE6C8D2B31D6F80091F6AF /* UsefulWebsiteViewController.swift in Sources */,
 				4EEC375A2B38109000849E39 /* DatePickerViewController.swift in Sources */,
+				4E334D912B412F2600B357FA /* AudioViewController.swift in Sources */,
 				4E157D3B2B36D29900EF0A0A /* BulbViewController.swift in Sources */,
 				4EFB29542B38776600872469 /* ImageRouletteViewController.swift in Sources */,
 				4E418A732B3DAE58000970CA /* PageControlViewController.swift in Sources */,

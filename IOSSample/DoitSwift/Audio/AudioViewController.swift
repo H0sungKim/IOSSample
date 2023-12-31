@@ -1,0 +1,151 @@
+//
+//  AudioViewController.swift
+//  IOSSample
+//
+//  Created by Hosung.Kim on 2023/12/31.
+//
+
+import UIKit
+import AVFoundation
+
+class AudioViewController: UIViewController {
+    
+    enum mode: Int {
+        case play = 0
+        case record
+    }
+    
+    var currentMode: mode = mode.play
+    
+    var audioPlayer: AVAudioPlayer!
+    var audioRecorder: AVAudioRecorder!
+    var audioFile: URL!
+    
+    var progressTimer: Timer!
+    
+    @IBOutlet weak var btnPlay: UIButton!
+    @IBOutlet weak var btnPause: UIButton!
+    @IBOutlet weak var btnStop: UIButton!
+    @IBOutlet weak var btnRecord: UIButton!
+    @IBOutlet weak var sldVolume: UISlider!
+    @IBOutlet weak var pvPlayTime: UIProgressView!
+    @IBOutlet weak var lbCurrentTime: UILabel!
+    @IBOutlet weak var lbEndTime: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
+    private func initialize() {
+        sldVolume.maximumValue = 10.0
+        sldVolume.value = 1.0
+        audioPlayer.volume = sldVolume.value
+        applyMode()
+    }
+    
+    private func applyMode() {
+        switch currentMode {
+        case .play:
+            audioFile = Bundle.main.url(forResource: "Sogno di Volare The Dream of Flight", withExtension: "mp3")
+            btnRecord.isEnabled = false
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: audioFile)
+            } catch let error as NSError {
+                NSLog("\(error)")
+            }
+            audioPlayer.delegate = self
+            audioPlayer.prepareToPlay()
+            lbEndTime.text = convertTimeFormat(time: Int(audioPlayer.duration))
+            enableBtns(play: true, pause: false, stop: false)
+        case .record:
+            audioPlayer.stop()
+            audioPlayer.currentTime = 0
+            let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+            audioFile = documentDirectory.appendingPathComponent("recordFile.m4a")
+            btnRecord.isEnabled = true
+            let recordSettings = [
+                AVFormatIDKey: NSNumber(value: kAudioFormatAppleLossless as UInt32),
+                AVEncoderAudioQualityKey: AVAudioQuality.max.rawValue,
+                AVEncoderBitRateKey: 320000,
+                AVNumberOfChannelsKey: 2,
+                AVSampleRateKey: 44100.0
+            ] as [String: Any]
+            do {
+                audioRecorder = try AVAudioRecorder(url: audioFile, settings: recordSettings)
+            } catch let error as NSError {
+                NSLog("\(error)")
+            }
+            audioRecorder.delegate = self
+            lbEndTime.text = "00:00"
+            enableBtns(play: false, pause: false, stop: false)
+            let session = AVAudioSession.sharedInstance()
+            do {
+                try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+                try AVAudioSession.sharedInstance().setActive(true)
+            } catch let error as NSError {
+                NSLog("\(error)")
+            }
+            do {
+                try session.setActive(true)
+            } catch let error as NSError {
+                NSLog("\(error)")
+            }
+        }
+        pvPlayTime.progress = 0
+        lbCurrentTime.text = "00:00"
+    }
+    private func convertTimeFormat(time: Int) -> String {
+        return "\(String(format: "%02d", time/60)):\(String(format: "%02d", time%60))"
+    }
+    private func enableBtns(play: Bool, pause: Bool, stop: Bool) {
+        btnPlay.isEnabled = play
+        btnPause.isEnabled = pause
+        btnStop.isEnabled = stop
+    }
+    @objc private func updatePlayTime() {
+        lbCurrentTime.text = convertTimeFormat(time: Int(audioPlayer.currentTime))
+        pvPlayTime.progress = Float(audioPlayer.currentTime/audioPlayer.duration)
+    }
+    
+    @IBAction func onClickPlay(_ sender: Any) {
+        audioPlayer.play()
+        enableBtns(play: false, pause: true, stop: true)
+        progressTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(AudioViewController.updatePlayTime), userInfo: nil, repeats: true)
+    }
+    @IBAction func onClickPause(_ sender: Any) {
+        audioPlayer.pause()
+        enableBtns(play: true, pause: false, stop: true)
+    }
+    @IBAction func onClickStop(_ sender: Any) {
+        audioPlayer.stop()
+        enableBtns(play: true, pause: false, stop: false)
+        progressTimer.invalidate()
+        lbCurrentTime.text = "00:00"
+        audioPlayer.currentTime = 0
+    }
+    
+    @IBAction func volumeChanged(_ sender: UISlider) {
+        audioPlayer.volume = sender.value
+    }
+    
+    @IBAction func recordOn(_ sender: UISwitch) {
+        if sender.isOn {
+            currentMode = .record
+        } else {
+            currentMode = .play
+        }
+        initialize()
+    }
+}
+
+extension AudioViewController: AVAudioPlayerDelegate {
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        progressTimer.invalidate()
+        enableBtns(play: true, pause: false, stop: false)
+    }
+}
+
+extension AudioViewController: AVAudioRecorderDelegate {
+    
+}

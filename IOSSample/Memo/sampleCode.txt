@@ -1,0 +1,62 @@
+
+
+// 다이알로그
+    HHDialog(style:HHStyle(HHDialogStyle.none), titleText: nil,
+    contentsText: STR(.dialog_login_social_fail), okText: STR(.allOk))
+
+
+// ViewController 만들때 함수
+    initializeVariables()
+    initializeViews()
+    applyTextLabel()
+    applyImage()
+    applyUI()
+
+    private func initializeVariables() {
+    }
+    private func initializeViews() {
+    }
+    private func applyTextLabel() {
+    }
+    private func applyImage() {
+    }
+    private func applyUI() {
+    }
+
+// NavigationView
+    navigationView.lbTitle.text = LATER("")
+    navigationView.backgroundType = .opacity
+    navigationView.buttonStyle = HHStyle(NavigationView.Button.leftBack)
+    navigationView.delegate = self
+
+
+// Label 초기화
+    lbName.text = LATER("")
+    lbName.font = UIFont.typeAP15
+    lbName.textColor = .fg1
+
+// HHTextField
+    tfPhoneNumber.tfTextField.placeholder = STR(.profile_error_message)
+    tfPhoneNumber.delegate = self
+    tfPhoneNumber.tfTextField.tag = TextfieldId.phoneNumber.rawValue
+
+// HHButton
+    btnAuth.hhbuttontype = .whiteBlackRound
+    btnAuth.setTitle(STR(.all_ok), for: .normal)
+
+// TableView
+        tbvMain.delegate = self
+        tbvMain.dataSource = self
+        tbvMain.register(UINib(nibName: String(describing: InsideCollectionTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: InsideCollectionTableViewCell.self))
+        tbvMain.tableFooterView = UIView.init(frame: .zero)
+
+// BorderLabel
+        lbTag1.text = LATER("")
+        lbTag1.edgeType = .sideCircle
+        lbTag1.backgroundColor = .bg4
+        lbTag1.textColor = .fg1
+
+// Button
+        btnTrainer.setTitle(LATER("더보기"), for:.normal)
+        btnTrainer.applyGUI(style:.defaultWhite1Button)
+        btnTrainer.tintColor = UIColor.fgButtonNormal

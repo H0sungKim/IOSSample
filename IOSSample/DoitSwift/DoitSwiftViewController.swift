@@ -19,6 +19,7 @@ class DoitSwiftViewController: UIViewController, UITableViewDataSource, UITableV
         "Map",
         "Page Control",
         "Tab",
+        "Audio",
     ]
     @IBOutlet weak var tableView: UITableView!
     
