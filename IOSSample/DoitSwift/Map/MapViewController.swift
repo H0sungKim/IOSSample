@@ -72,6 +72,10 @@ extension MapViewController: CLLocationManagerDelegate {
         locationManager.stopUpdatingLocation()
     }
     func setAnnotation(latValue: CLLocationDegrees, longValue: CLLocationDegrees, delta span: Double, title: String, subtitle: String) {
+        for i in mvMap.annotations {
+            mvMap.removeAnnotation(i)
+        }
+        
         let annotation = MKPointAnnotation()
         annotation.coordinate = goLocation(latValue: latValue, longValue: longValue, delta: span)
         annotation.title = title

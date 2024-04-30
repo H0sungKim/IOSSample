@@ -51,5 +51,3 @@ extension ImageRouletteViewController: UIPickerViewDelegate, UIPickerViewDataSou
         return 50
     }
 }
-
-
